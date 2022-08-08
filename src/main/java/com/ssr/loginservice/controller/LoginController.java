@@ -2,7 +2,6 @@ package com.ssr.loginservice.controller;
 
 import java.util.List;
 
-import org.slf4j.event.Level;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,7 +32,7 @@ public class LoginController {
 	public String registration(@RequestBody LoginModel loginbean) {
 	
 		System.out.println("Entery point");
-
+	
 		loginReposiory.save(loginbean);
 
 		return "sucess";
